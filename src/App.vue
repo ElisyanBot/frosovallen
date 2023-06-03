@@ -1,13 +1,15 @@
 <template>
-  <HeaderNav />
-  <main>
-    <AboutUs />
-    <LearnMoreFeature />
-    <!-- <FoodTable :food-items="foodItems" /> -->
-    <BookRoom :rooms="rooms" />
-  </main>
-  <footer />
-</template>
+  <div id="app" >
+    <HeaderNav />
+    <main>
+      <AboutUs />
+      <LearnMoreFeature />
+      <!-- <FoodTable :food-items="foodItems" /> -->
+      <BookRoom :rooms="rooms" />
+    </main>
+    <footer />
+  </div>
+  </template>
 
 <script setup>
 import LearnMoreFeature from '@/features/LearnMoreSection/LearnMoreFeature.vue'
