@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/",
+    "build": "vite build --base=frosovallen",
     "preview": "vite preview",
-    "deploy": "git push github :gh-pages && git subtree push --prefix dist github gh-pages"
+    "deploy": "git add . && git commit -m'deployed' && git push github :gh-pages && git subtree push --prefix dist github gh-pages"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
