@@ -5,7 +5,7 @@
         <img src="/img/logo.svg" />
       </picture>
       <button @click="() => showMenu = true">
-       <i class="fa-solid fa-bars"/> 
+      <FontAwesomeIcon :icon="['fas', 'bars']" />
       </button>
     </div>
     <div v-if="showMenu" class="mobile-menu__background"> 
@@ -30,6 +30,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 const showMenu = ref(false);
 </script>
@@ -49,7 +50,7 @@ const showMenu = ref(false);
   .logo-container { 
     padding-top: 1rem;
     position: relative;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: flex-end;
     
@@ -70,12 +71,13 @@ const showMenu = ref(false);
     }
 
     button {
-      padding: 1.5rem;
+      padding: 1rem;
       background-color: white;
       border: none;
+      border-radius: 4px;
       cursor: pointer;
       font-size: 3rem;
-       
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.256);
     }
 
   }

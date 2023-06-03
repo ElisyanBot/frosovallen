@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 defineProps({
   bgSrc: {
@@ -149,7 +149,7 @@ const handleClick = () => {
         width: 10rem;
         height: 10rem;
 
-        i{ 
+      svg { 
           font-size: 6rem;
           width: 6rem;
           height: 6rem;
@@ -175,7 +175,7 @@ const handleClick = () => {
         height: 7rem;
         border-radius: 1px;
         
-        i {
+      svg {
           font-size: 4rem;
           width: 4rem;
           height: 4rem;
@@ -199,7 +199,7 @@ const handleClick = () => {
       div {
         width: 4rem;
         height: 4rem;
-        i {
+      svg {
           font-size: 3rem;
           width: 3rem;
           height: 3rem;

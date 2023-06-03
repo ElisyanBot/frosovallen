@@ -3,6 +3,7 @@
     <main>
       <AboutUs />
       <LearnMoreFeature />
+      <FooterImgBanner />
       <!-- <FoodTable :food-items="foodItems" /> -->
       <BookRoom :rooms="rooms" />
     </main>
@@ -15,6 +16,7 @@ import FoodTable from '@/features/FoodTable/FoodTable.vue'
 import AboutUs from '@/components/AboutUs.vue'
 import HeaderNav from '@/features/HeaderNav/HeaderNav.vue'
 import BookRoom from '@/features/BookRoom/BookRoom.vue'
+import FooterImgBanner from '@/components/FooterImgBanner.vue'
 
 defineProps({
   foodItems: Array,

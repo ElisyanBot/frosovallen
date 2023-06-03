@@ -7,6 +7,6 @@ const routes = [
 ]
 
 
-const router = createRouter({ history: createWebHistory(), routes, base: process.env.BASE_URL});
+const router = createRouter({ history: createWebHistory(), routes});
 
 export default router;
