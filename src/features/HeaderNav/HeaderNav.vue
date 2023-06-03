@@ -5,8 +5,8 @@
   <MainWidthLayout>
     <header class="header-nav">
       <ul class="header-nav__desktop-menu-row">
-        <NavItem text="cafe" go-to="#cafe" />
-        <NavItem text="meny" go-to="#meny" />
+        <NavItem text="cafe" go-to="/" />
+        <NavItem text="events" go-to="/events" />
       </ul>
       <div class="header-nav__logo">
         <img src="/img/logo.svg" alt="logo" />

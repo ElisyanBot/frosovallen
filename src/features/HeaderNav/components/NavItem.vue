@@ -1,6 +1,6 @@
 <template>
   <li class="header-nav-item" @click="handleClick">
-    <a :href="goTo"> {{ text }} </a>
+    <RouterLink :to="{ path: goTo}"> {{ text }} </RouterLink>
   </li>
 </template>
 
