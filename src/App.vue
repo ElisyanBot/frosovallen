@@ -1,5 +1,4 @@
 <template>
-  <div id="app" >
     <HeaderNav />
     <main>
       <AboutUs />
@@ -8,7 +7,6 @@
       <BookRoom :rooms="rooms" />
     </main>
     <footer />
-  </div>
   </template>
 
 <script setup>
