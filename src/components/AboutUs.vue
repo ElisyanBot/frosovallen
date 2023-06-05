@@ -99,7 +99,70 @@
 
   //------- media -----------------------------------
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1500px) {
+    #about-us {
+    margin: 11rem 0;
+  }
+
+  .about-us__outer-div {
+    // display: flex;
+    height: 60rem;
+    padding: 0 2rem;
+
+    h2 {
+      color: #c64533;
+      font-size: 5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .about-us__background-shape {
+    height: 60rem;
+    width: 45rem;
+    margin-right: 2rem;
+  }
+
+  .about-us__inner-div {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 15rem);
+    z-index: 1;
+
+    .about-us__info-txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3 {
+        color: #505050;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+      }
+
+      p {
+        width: 44rem;
+        font-size: 2rem;
+        color: #464646;
+        margin-bottom: 2rem;
+        letter-spacing: 0.22rem;
+      }
+    }
+  }
+
+  .about-us__info-txt {
+    // width: 100rem;
+  }
+
+  .about-us__img-container > img {
+    width: 45rem;
+    height: 47rem;
+    object-fit: contain;
+  }
+  }
+
+  @media screen and (max-width: 1100px) {
       #about-us {
         margin: 11rem 0;
       }
@@ -122,11 +185,12 @@
     }
 
     .about-us__background-shape {
-      height: 30rem;
+      height: 25rem;
       width: 100%;
       position: relative;
       top: 0;
       left: 0;
+      margin-right: 0;
     }
 
     .about-us__inner-div {
@@ -136,6 +200,7 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
+      height: 95rem;
       z-index: 1;
 
       .about-us__info-txt {
@@ -165,12 +230,14 @@
     }
 
     .about-us__img-container {
+        display: flex;
+        justify-content: center;
         position: relative;
-        bottom: -20rem;
+        bottom: -5rem;
     }
 
     .about-us__img-container > img {
-      width: 50rem;
+      width: calc(100% - 8rem);
       height:  50rem;
       object-fit: contain;
     }

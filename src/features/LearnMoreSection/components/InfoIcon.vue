@@ -45,7 +45,7 @@ const handleClick = () => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 28rem;
+    width: 20rem;
 
     &:hover {
       cursor: pointer;
@@ -58,6 +58,7 @@ const handleClick = () => {
     justify-content: center;
     align-items: center;
 
+
       img {
         width: 100%;
         height: 100%;
@@ -68,8 +69,8 @@ const handleClick = () => {
       position: absolute;
       background-color: #7d9a89;
       border-radius: 5px;
-      width: 20rem;
-      height: 20rem;
+      width: 14rem;
+      height: 14rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -79,8 +80,8 @@ const handleClick = () => {
         justify-content: center;
         align-items: center;
         font-size: 9rem;
-        width: 9rem;
-        height: 9rem;
+        width: 7rem;
+        height: 7rem;
         color: #1c4e46;
       }
     }
@@ -95,53 +96,16 @@ const handleClick = () => {
 
     p {
       color: #1c4e46;
-      font-size: 2.8rem;
+      font-size: 2rem;
       font-weight: bold;
       text-transform: uppercase;
     }
   }
   
-  @media screen and (max-width: 1300px) {
-    .info-icon {
-      width: 20rem;
-    }
-
-    .info-icon__background {
-      div {
-        width: 15rem;
-        height: 15rem;
-      }
-    }
-
-    .info-icon__text {
-      p {
-        font-size: 2.2rem;
-      }
-    }
-  }
-
-  @media screen and (max-width: 1300px) {
-    .info-icon {
-      width: 20rem;
-    }
-
-    .info-icon__background {
-      div {
-        width: 15rem;
-        height: 15rem;
-      }
-    }
-
-    .info-icon__text {
-      p {
-        font-size: 2.2rem;
-      }
-    }
-  }
 
   @media screen and (max-width: 950px) {
     .info-icon {
-      width: 15rem ;
+      width: 15rem;
     }
 
     .info-icon__background {

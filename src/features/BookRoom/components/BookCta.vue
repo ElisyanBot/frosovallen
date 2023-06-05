@@ -51,7 +51,7 @@ defineEmits(['bookRoomAction'])
             position: absolute;
             z-index: 2;
             background-color: #f2f2f2;
-            width: 100%;
+            width: calc(100% - 8rem);
             max-width: 127.2rem;
             height: 43rem;
            h2 {
@@ -81,7 +81,59 @@ defineEmits(['bookRoomAction'])
         }
     }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1300px) {
+    section.book-cta {
+
+       picture {
+           img {
+           }
+       }
+        .book-cta__green-background {
+            display: none;
+              // width: 100%;
+              //  max-width: 40rem;
+              // height: inherit;
+              // background-color: #1C4E46;
+       }
+        .book-cta__text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 2;
+            background-color: #f2f2f2;
+            width: calc(100% - 8rem);
+            max-width: 127.2rem;
+            height: 43rem;
+           h2 {
+               font-size: 4rem;
+               color: #1C4E46;
+               text-transform: uppercase;
+
+           }
+        h3 {
+            color: #bdbba4;
+            font-size: 3.2rem;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin-bottom: 5rem;
+           }
+        }
+        button {
+            width: calc(100% - 8rem);
+            max-width: 75rem;
+            height: 10rem;
+            border: 4px solid #1C4E46;
+            color: #1C4E46;
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+  }
+  @media screen and (max-width: 700px) {
     section.book-cta {
       height: 50rem;
       .book-cta__green-background {
@@ -90,7 +142,7 @@ defineEmits(['bookRoomAction'])
     
       .book-cta__text-container {
         height: 30rem;
-        max-width: 36rem;
+        width: calc(100% - 4rem);
         margin: 0 4rem;
         h2 {
          font-size: 2.5rem;
