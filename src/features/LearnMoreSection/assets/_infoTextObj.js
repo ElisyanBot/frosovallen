@@ -1,8 +1,12 @@
 export default {
   cafe: [
     {
-      headerTxt: 'öppettider ',
-      infoTxt: 'Café har öppet mellan 23 juni - 20 augusti | kl 12:00 - 17:00',
+      headerTxt: 'öppettider 19 juni - 20 augusti',
+      infoTxt: 'varje dag kl 12:00 - 17:00',
+    },
+    {
+      headerTxt: 'kvällsöppet',
+      infoTxt: 'torsdagar & lördagar har vi kvällsöppet till kl 19:00',
     },
     {
       headerTxt: 'hitta hit',
@@ -40,7 +44,7 @@ export default {
   gudstjänster: [
     {
       headerTxt: 'söndagar',
-      infoTxt: 'detta är ett test <a href=\'#\'>länk</a>',
+      infoTxt: 'Välkommen kl.10 varje söndag. <a href=\'https://www.efsostersund.se\'> EFS-kyrkans</a>',
     },
     {
       headerTxt: 'hitta hit',

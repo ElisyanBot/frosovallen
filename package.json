@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build --base=/frosovallen/",
     "preview": "vite preview",
-    "deploy": "git add . && git commit -m'deployed' && git push github :gh-pages && git subtree push --prefix dist github gh-pages"
+    "deploy": "git push github :gh-pages && git subtree push --prefix dist github gh-pages"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -15,6 +15,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "moment": "^2.29.4",
     "sass": "^1.62.1",
     "vue": "^3.2.47",
     "vue-router": "^4.2.2"

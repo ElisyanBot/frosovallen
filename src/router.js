@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 
-const routes = [
-  { path: '/', component: () => import('@/views/Home.vue') },
-  { path: '/events', component: () => import('@/views/Events.vue') },
-]
-
-
-const router = createRouter({ history: createWebHistory(), routes});
-
-export default router;
+export const router = createRouter({ 
+  history: createWebHistory('/frosovallen/'),
+  routes: [
+    { 
+      path: '/', 
+      name: 'home', 
+      component: () => import('@/views/Home.vue') 
+    },
+    { 
+      path: '/events',
+      name: 'events',
+      component: () => import('@/views/Events.vue') },
+  ]
+});

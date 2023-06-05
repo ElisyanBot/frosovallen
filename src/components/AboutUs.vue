@@ -6,18 +6,14 @@
         <div class="about-us__inner-div">
           <article class="about-us__info-txt">
             <h3>om oss</h3>
-            <p>
-              Vivamus orci purus, semper et euismod id, vestibulum ut risus. Morbi diam ante, varius
-              eget lorem et, accumsan sodales dolor. Aliquam sollicitudin nibh quis turpis tincidunt
-              imperdiet. Donec ut volutpat ipsum. Duis posuere diam ut urna pretium, nec eleifend
-              velit.
-            </p>
-            <p>
-              Pellentesque. Vestibulum et sagittis nunc, sed bibendum justo. Etiam posuere dui et
-              porta sagittis. Praesent vitae risus ornare, cursus dolor sit amet, aliquet velit.
-              Etiam molestie magna interdum lobortis mollis. Maecenas sem elit, hendrerit nec dolor
-              sed.
-            </p>
+              <p>
+                Frösövallen är mötesplatsen för goda möten och upplevelser i en unik miljö. Caféet är hjärtat i verksamheten och serverar smakupplevelser med lokal prägel. 
+                Tar du dig upp i vårt utsiktstorn väntar den jämtländska fjällvärldens bedårande panorama. Men Frösövallen är också mycket mer. 
+              </p>
+              <p>
+                EFS-kyrkan i Östersund som driver Frösövallen kallar det för sin sommarkyrka och erbjuder en mosaik av aktiva samlingar under hela sommaren:
+                Konsertkvällar med en blandad musikalisk palett, konst- o hantverkskvällar, Quizpromenader, sportkvällar, samtalsgrupper och sommargudstjänster.
+              </p>
           </article>
           <div class="about-us__img-container">
             <img src="/img/frosovallenHouse.png" alt="bild på försvallen" />
@@ -218,6 +214,8 @@
 
     .about-us__img-container > img {
       height: 20rem;
+      width: 25rem;
+      object-fit: cover;
     }
   } 
 </style>

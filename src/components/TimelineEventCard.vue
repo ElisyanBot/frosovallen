@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'event-card': true, 'reverseCard': reverseCard }">
+  <div :class="{'event-card': true, 'reverseCard': reverseCard, 'date-passed': isDatePassed}">
     <article>
       <div class="header">
         <h3> {{ item.title }} </h3>
@@ -29,7 +29,8 @@
 </template>
 
 <script setup>
-import moment from 'moment'
+import moment from 'moment';
+import { ref } from 'vue';
 
 const props = defineProps({
   item: Object,
@@ -41,12 +42,14 @@ const props = defineProps({
 })
 
 const date = moment(props.item.date).format('DD MMMM YYYY').split(' ')
-
+const isDatePassed = ref(moment(props.item.date).isBefore(moment()))
 
 </script>
 
 <style scoped lang="scss">
-
+    .date-passed {
+          display: none !important;
+    }
     .reverseCard {
         flex-direction: row-reverse;
         margin-left: auto;

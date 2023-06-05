@@ -7,13 +7,12 @@
       </div>
       <div class="text-info">
         <p>
-          Tack för att du vill boka boende hos försövallen, skicka gärna ett mail eller hör av er på telefon vid bokning av
-          boende. Vårat kontor har öppet: <b> 05:00 - 16:00 </b> varje vardag.
+          Vad kul att du vill bo på Frösövallen. Skicka ett mail eller hör av dig via telefon för bokning av boende. Vårat kontor har öppet: <b> 10:00 - 18:00 </b> varje dag.
         </p>
         <h3 class="book-room-form__second-header"> Kontaktuppgifter </h3>
 
         <p class="book-room-form__info-text"><b> Mailadress: </b> <a href="mailto:info@frosovallen.se"> info@frosovallen.se</a></p>
-        <p class="book-room-form__info-text"><b> telefon: </b> <a> 070-0000000  </a> </p>
+        <p class="book-room-form__info-text" href="tel:0767923889"><b> telefon: </b><a>076-792 38 89 </a></p>
       </div>
     </form>
   </div>

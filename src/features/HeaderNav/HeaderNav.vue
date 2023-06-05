@@ -6,13 +6,13 @@
     <header class="header-nav">
       <ul class="header-nav__desktop-menu-row">
         <NavItem text="cafe" go-to="/" />
-        <NavItem text="events" go-to="/events" />
+        <NavItem text="boende" go-to="/" />
       </ul>
       <div class="header-nav__logo">
         <img src="/img/logo.svg" alt="logo" />
       </div>
       <ul class="header-nav__desktop-menu-row">
-        <NavLinkItem text="evenemang" a-link="/events" />
+        <NavItem text="arrangemang" go-to="/events" />
         <NavLinkItem target="_blank" text="hitta hit" a-link="https://facebook.com" />
       </ul>
     </header>

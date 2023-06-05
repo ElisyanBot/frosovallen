@@ -17,7 +17,7 @@
 
       <InfoIcon
         bg-src="./img/learn-more__event-img.png"
-        text="event"
+        text="arrangemang"
         icon-class="calendar"
         @handle-click="() => (currentInfoObj = 'event')"
       />
