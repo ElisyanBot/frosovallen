@@ -88,10 +88,21 @@ defineProps({
 
       h4 {
         font-size: 1.6rem;
+        text-align: center;
       }
       span {
         text-align: center;
-        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.3rem;
+        a {
+          &::before {
+            content: ' ';
+            margin: 0;
+          }
+        }
       }
     }
   }

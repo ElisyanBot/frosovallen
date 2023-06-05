@@ -21,7 +21,12 @@
           <a href="/events"> arrangemang </a>
         </RouterLink>
         <li class="mobile-menu__item">
-          <a href="#" target="_blank"> hitta hit </a>
+          <a 
+            href="https://www.google.com/maps/place/Stockev%C3%A4gen+3,+832+96+Fr%C3%B6s%C3%B6n/data=!4m2!3m1!1s0x466fb7a8e0574df3:0x20bf172f27e94663?sa=X&ved=2ahUKEwiCkpXQwuP9AhXPzYsKHXDjAXwQ8gF6BAgKEAI" 
+            target="_blank"
+          > 
+            hitta hit 
+          </a>
         </li>
       </ul>
     </div>

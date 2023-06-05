@@ -193,9 +193,12 @@ const handleClick = () => {
   @media screen and (max-width: 500px) {
     .info-icon {
       width: 6rem;
+      overflow: visible;
     }
-
+    
     .info-icon__background {
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+      
       div {
         width: 4rem;
         height: 4rem;
@@ -209,7 +212,7 @@ const handleClick = () => {
 
     .info-icon__text {
       p {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
   }

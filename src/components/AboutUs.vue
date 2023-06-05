@@ -191,7 +191,7 @@
     }
 
     .about-us__inner-div {
-      height: 45rem;
+      height: 55rem;
       .about-us__info-txt {
 
         h3 {
@@ -200,7 +200,7 @@
         }
 
         p {
-          font-size: 1.2rem;
+          font-size: 1.4rem;
         }
       }
     }
