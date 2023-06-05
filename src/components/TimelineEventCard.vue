@@ -41,7 +41,7 @@ const props = defineProps({
   },
 })
 
-const date = moment(props.item.date).format('DD MMMM YYYY').split(' ')
+const date = moment(props.item.date).format('DD MMM YYYY').split(' ')
 const isDatePassed = ref(moment(props.item.date).isBefore(moment()))
 
 </script>

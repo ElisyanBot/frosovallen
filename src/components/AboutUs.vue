@@ -158,11 +158,10 @@
   .about-us__img-container > img {
     width: 45rem;
     height: 47rem;
-    object-fit: contain;
   }
   }
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1150px) {
       #about-us {
         margin: 11rem 0;
       }
@@ -200,7 +199,6 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      height: 95rem;
       z-index: 1;
 
       .about-us__info-txt {
@@ -233,15 +231,15 @@
         display: flex;
         justify-content: center;
         position: relative;
-        bottom: -5rem;
+        bottom: -15rem;
     }
 
     .about-us__img-container > img {
       width: calc(100% - 8rem);
       height:  50rem;
-      object-fit: contain;
     }
   }
+
 
   @media screen and (max-width: 500px) {
       #about-us {
@@ -258,7 +256,6 @@
     }
 
     .about-us__inner-div {
-      height: 55rem;
       .about-us__info-txt {
 
         h3 {
@@ -276,13 +273,14 @@
     }
 
     .about-us__img-container {
-      top: 4rem;
+      top: 10rem;
+
     }
 
     .about-us__img-container > img {
-      height: 20rem;
-      width: 25rem;
-      object-fit: cover;
+      height: calc(40%);
+      width: calc(100% - 8rem);
+      object-fit: contain;
     }
   } 
 </style>
