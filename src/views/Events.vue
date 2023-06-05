@@ -2,6 +2,12 @@
     <HeaderNav />
     <main>
       <h2 class="event__header"> Kommande händelser </h2>
+      <div>
+        <button @click="removeFilter"> Alla </button>
+        <button @click="filterByMonth('06')"> Juni </button>
+        <button @click="filterByMonth('07')"> Juli </button>
+        <button @click="filterByMonth('08')"> Augusti </button>
+      </div>
       <section class="timeline">
         <TimelineEventCard
           v-for="( item, index ) in events"
@@ -16,13 +22,26 @@
 </template>
 
 <script setup>
-  import { ref, onMounted } from 'vue';
+  import { ref } from 'vue';
  import HeaderNav from '@/features/HeaderNav/HeaderNav.vue';
  import FooterImgBanner from '@/components/FooterImgBanner.vue';
   import TimelineEventCard from '@/components/TimelineEventCard.vue';
  import { Events } from '@/data/Events.js';
+import moment from 'moment';
 
  const events = ref(Events);
+  //add filter for months
+
+  const filterByMonth = (month) => {
+    events.value = Events.filter((event) => {
+      return moment(event.date).format('MM') === month;
+    });
+    console.log(events.value);
+  };
+
+  const removeFilter = () => {
+    events.value = Events;
+  };
  
 </script>
 

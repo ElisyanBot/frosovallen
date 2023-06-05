@@ -10,8 +10,8 @@
         </p>
       </div>
       <div class="footer">
-        <b>
-          PLATS | <span> {{ item.location }} </span>
+        <b v-if="item.link">
+          länk | <a :href="item?.link"> köp biljetter här </a>
         </b>
         <b>
           KL | <span> {{ item.time }} </span>
@@ -30,7 +30,7 @@
 
 <script setup>
 import moment from 'moment';
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
 const props = defineProps({
   item: Object,
@@ -40,9 +40,14 @@ const props = defineProps({
     default: false,
   },
 })
-
-const date = moment(props.item.date).format('DD MMM YYYY').split(' ')
+const date = ref(moment(props.item.date).format('DD MMM YYYY').split(' '));
 const isDatePassed = ref(moment(props.item.date).isBefore(moment()))
+
+watch(() => props.item.date, () => {
+  date.value = moment(props.item.date).format('DD MMM YYYY').split(' ');
+  isDatePassed.value = moment(props.item.date).isBefore(moment());
+})
+
 
 </script>
 
@@ -103,6 +108,10 @@ const isDatePassed = ref(moment(props.item.date).isBefore(moment()))
                     color:#5E6963;
                     font-weight: lighter;
                 }
+                b > a {
+                        color: #5faeca;
+                        text-decoration: none;
+                    }
             }
         }
 
