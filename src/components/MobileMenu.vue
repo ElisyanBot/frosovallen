@@ -14,12 +14,12 @@
       </button>
 
       <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
+        <RouterLink :to="{name: 'home'}" class="mobile-menu__item">
           <a href="/"> cafe </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="/events"> evenemang </a>
-        </li>
+        </RouterLink>
+        <RouterLink :to="{name: 'events'}" class="mobile-menu__item">
+          <a href="/events"> arrangemang </a>
+        </RouterLink>
         <li class="mobile-menu__item">
           <a href="#" target="_blank"> hitta hit </a>
         </li>
