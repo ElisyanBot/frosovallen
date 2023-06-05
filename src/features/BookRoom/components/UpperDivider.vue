@@ -15,7 +15,8 @@
         .divider__green-corner {
             width: 100%;
             // max-width: 145rem;
-            height: 7rem;
+            // height: 7rem;
+            height: 100%;
             background-color: #7D9A89;
         }
     }
@@ -23,7 +24,7 @@
     
   @media screen and (max-width: 800px) {
    .book-room__upper-divider {
-    height: 15rem;
+    // height: 15rem;
    } 
   }
 </style>

@@ -24,7 +24,7 @@
     <!-- content -->
     <UpperDivider />
     <BookCta @book-room-action="openBookForm" />
-    <DisplayRooms :rooms="rooms" />
+    <DisplayRooms />
     <BottomDivider />
   </section>
 </template>

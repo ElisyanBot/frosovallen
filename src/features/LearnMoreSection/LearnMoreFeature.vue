@@ -88,7 +88,7 @@ watchEffect(() => {
     position: relative;
     .line-green__arrow {
       position: absolute;
-      top: -3.33rem;
+      top: -3.1rem;
       left: 87%;
       height: 5.5rem;
       width: 8rem;
@@ -110,8 +110,8 @@ watchEffect(() => {
       }
       .line-green__arrow {
         position: relative;
-        width: 4rem;
-        transform:translateY(-0.9rem);
+        width: 5rem;
+        top: -4.3rem;
         margin-right: 8rem;
       }
     }
@@ -121,6 +121,11 @@ watchEffect(() => {
     .info-text__line-animation {
       img {
         height: 4px;
+      }
+      .line-green__arrow {
+        top: -4rem;
+        width: 3.2rem;
+        margin-right: 4rem;
       }
     }
   }

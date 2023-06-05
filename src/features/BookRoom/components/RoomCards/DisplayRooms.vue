@@ -24,7 +24,7 @@
           </div>
         </div>
       </div>
-      <RoomCards :rooms="rooms" />
+      <!-- <RoomCards :rooms="rooms" /> -->
     </div>
   </section>
 </template>
@@ -124,7 +124,7 @@ section.book-room__display-rooms {
             }
             .info-text {
                 p {
-                  font-size: 1.4rem;
+                  font-size: 1.6rem;
                 }
             }
 

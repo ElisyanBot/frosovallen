@@ -28,7 +28,7 @@ defineProps({
     gap: 5rem;
 
     h4 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       text-transform: uppercase;
       color: #1c4e46;
     }
@@ -37,13 +37,14 @@ defineProps({
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      font-size: 2.6rem;
+      font-size: 2rem;
       text-transform: uppercase;
       color: #5e6963;
       height: inherit;
 
       a {
         color: #4791a8;
+        text-decoration: none;
         &::before {
           content: '|';
           margin: 0 1rem;
