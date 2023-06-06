@@ -61,17 +61,19 @@ const showMenu = ref(false);
     
     picture {
       position: absolute;
+      border-radius: 50%;
       background-color: white;
-      width: 10rem;
-      height: 10rem;
+      width: 20rem;
+      height: 20rem;
       left: 50%;
       transform: translate(-50%, -50%);
       display: flex;
       justify-content: center;
       align-items: center;
+      
 
       img {
-
+        width: 100%;
       }
     }
 

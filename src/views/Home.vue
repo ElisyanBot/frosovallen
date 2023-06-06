@@ -6,6 +6,7 @@
       <FooterImgBanner />
       <!-- <FoodTable :food-items="foodItems" /> -->
       <BookRoom :rooms="rooms" />
+      <BookLocal />
     </main>
     <footer />
 </template>
@@ -17,6 +18,7 @@ import AboutUs from '@/components/AboutUs.vue'
 import HeaderNav from '@/features/HeaderNav/HeaderNav.vue'
 import BookRoom from '@/features/BookRoom/BookRoom.vue'
 import FooterImgBanner from '@/components/FooterImgBanner.vue'
+import BookLocal from '../components/BookLocal.vue'
 
 defineProps({
   foodItems: Array,

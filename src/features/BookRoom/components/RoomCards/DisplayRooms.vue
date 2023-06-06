@@ -124,7 +124,8 @@ section.book-room__display-rooms {
             }
             .info-text {
                 p {
-                  font-size: 1.6rem;
+                  font-weight: normal;
+                  font-size: 1.5rem;
                 }
             }
 

@@ -61,8 +61,8 @@ import NavLinkItem from './components/NavLinkItem.vue'
     align-items: center;
     width: 23rem;
     height: 22rem;
+    border-radius: 50%;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
-    border-radius: 0.5rem;
     position: absolute;
     z-index: 10000;
     left: 0;

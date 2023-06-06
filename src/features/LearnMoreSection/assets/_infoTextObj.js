@@ -43,8 +43,8 @@ export default {
   ],
   gudstjänster: [
     {
-      headerTxt: 'söndagar',
-      infoTxt: 'Välkommen kl.10 varje söndag. <a href=\'https://www.efsostersund.se\'> EFS-kyrkans</a>',
+      headerTxt: 'välkommen på gudstjänst',
+      infoTxt: 'alla söndagar kl 10:00 <a href=\'https://www.efsostersund.se\'> mer info på EFS Östersund</a>',
     },
     {
       headerTxt: 'hitta hit',
