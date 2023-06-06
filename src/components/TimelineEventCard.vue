@@ -11,7 +11,7 @@
       </div>
       <div class="footer">
         <b v-if="item.link">
-          länk | <a :href="item?.link"> köp biljetter här </a>
+          Länk | <a :href="item?.link"> köp biljetter här </a>
         </b>
         <b>
           KL | <span> {{ item.time }} </span>
