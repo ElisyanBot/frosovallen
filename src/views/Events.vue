@@ -115,6 +115,8 @@ import moment from 'moment';
 
       button.selected {
         color: #c64533;
+        color: #c64533;
+
       }
     }
 
