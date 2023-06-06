@@ -101,7 +101,7 @@ section.book-room__display-rooms {
                       width: inherit;
                       margin: 2rem 0;
                       font-size: 2.4rem;
-                      font-weight: lighter;
+                      font-weight: normal;
 
                       b {
                           text-transform: capitalize;
@@ -111,6 +111,39 @@ section.book-room__display-rooms {
             }
         }
     }
+}
+
+@media screen and (max-width: 1000px) {
+ section.book-room__display-rooms {
+    .display-rooms__green-section {
+        height: 60rem;
+        padding: 2rem;
+        .green-section__text-container {
+            h3 {
+                font-size: 3rem;
+            }
+            .info-text {
+                p {
+                  font-weight: bold;
+                  font-size: 1.6rem;
+                }
+            }
+
+            .price-info {
+              .header {
+                  h4 {
+                    font-size: 2.5rem;
+                  }
+              }
+                .content {
+                  p {
+                      font-size: 1.8rem;
+                  }
+              }
+            }
+        }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
