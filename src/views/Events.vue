@@ -2,11 +2,35 @@
     <HeaderNav />
     <main>
       <h2 class="event__header"> Kommande händelser </h2>
-      <div>
-        <button @click="removeFilter"> Alla </button>
-        <button @click="filterByMonth('06')"> Juni </button>
-        <button @click="filterByMonth('07')"> Juli </button>
-        <button @click="filterByMonth('08')"> Augusti </button>
+      <div class="event__filter">
+        <button  :class="{'selected': checkFilter('alla') }" @click="removeFilter"> Alla </button>
+        <button 
+          :class="{'selected': checkFilter('juni') }"
+          @click="() => {
+            selectedFilter = 'juni';
+            filterByMonth('06')
+          }"
+          > 
+          Juni 
+        </button>
+        <button 
+          :class="{'selected': checkFilter('juli') }"    
+          @click="() => {
+            selectedFilter = 'juli';
+            filterByMonth('07')
+          }"
+          > 
+          Juli 
+          </button>
+        <button 
+          :class="{'selected': checkFilter('augusti')}" 
+          @click="() => {
+            selectedFilter = 'augusti';
+            filterByMonth('08');
+          }"
+        >
+          Augusti 
+        </button>
       </div>
       <section class="timeline">
         <TimelineEventCard
@@ -30,16 +54,22 @@
 import moment from 'moment';
 
  const events = ref(Events);
-  //add filter for months
+ const selectedFilter = ref('alla');
+ const checkFilter = (month) => {
+   if (selectedFilter.value.includes(month)) {
+     return true;
+   }
+   return false;
+  }
 
   const filterByMonth = (month) => {
     events.value = Events.filter((event) => {
       return moment(event.date).format('MM') === month;
     });
-    console.log(events.value);
   };
 
   const removeFilter = () => {
+    selectedFilter.value = 'alla';
     events.value = Events;
   };
  
@@ -61,12 +91,58 @@ import moment from 'moment';
         color : #c64533;
         font-weight: 700;
         margin: 8rem auto;
+        margin-bottom: 2rem;
         padding: 0;
+    }
+
+    .event__filter {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      width: 50rem;
+      margin: auto;
+      margin-bottom: 6rem;
+
+      button {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: rgb(165, 156, 133);
+        cursor: pointer;
+      }
+
+      button.selected {
+        color: #c64533;
+      }
     }
 
     @media screen and (max-width: 800px){
       .event__header {
         font-size: 2.2rem;
       }
+      .event__filter {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      width: 50rem;
+      margin: auto;
+      margin-bottom: 6rem;
+
+      button {
+        background: none;
+        border: none;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: rgb(165, 156, 133);
+        cursor: pointer;
+      }
+
+      button.selected {
+        color: #c64533;
+      }
+    }
     }
 </style>
