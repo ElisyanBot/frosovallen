@@ -30,7 +30,7 @@ export default {
   event: [
     {
       headerTxt: 'kommande',
-      infoTxt: ' hitta kalender på facebook <a href=\'https://www.facebook.com\'>klicka här</a> ',
+      infoTxt: ' hitta kalender på facebook <a href=\'https://www.facebook.com/frosovallen\'>klicka här</a> ',
     },
     {
       headerTxt: 'Boka lokal',
