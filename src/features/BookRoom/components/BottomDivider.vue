@@ -6,9 +6,9 @@
 
 <style scoped lang="scss">
     .book-room__bottom-divider {
-        background-color: #d9d9d9;
+        background-color: #f2f2f2;
         width: 100%;
-        height: 20rem;
+        height: 15rem;
 
         .divider__green-corner {
             width: 100%;

@@ -146,7 +146,51 @@ watch(() => props.item.date, () => {
         }
     }
 
-  @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1050px) {
+      .reverseCard {
+        margin-left: 4rem;
+      }
+      .event-card {
+        flex-direction: row-reverse;
+        margin-left: 4rem;
+        gap: 2rem;
+        article {
+            padding: 1rem 2rem;
+            margin: 0 2rem 2rem 0;
+            .header {
+                h3 {
+                  font-size: 2.2rem;
+                }
+            }
+
+            .content {
+              p {
+                font-size: 1.8rem;    
+              }
+            }
+
+            .footer {
+              font-size: 1.6rem;
+              height: 5em;
+              gap: 1rem;
+            }
+        }
+
+        .timeline {
+            .date-section {
+              // font-size: 1.6rem;
+                p:nth-child(2)  {
+                }
+            }
+
+            .line {
+            }
+        }
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
       .reverseCard {
         margin-left: 4rem;
       }
@@ -165,8 +209,7 @@ watch(() => props.item.date, () => {
 
             .content {
               p {
-                font-size: 1.2rem;
-              }
+                font-size: 1.6rem;    }
             }
 
             .footer {

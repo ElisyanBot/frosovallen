@@ -10,7 +10,7 @@
         align-items: flex-end;
         background-color: #d9d9d9;
         width: 100%;
-        height: 30rem;
+        height: 5rem;
 
         .divider__green-corner {
             width: 100%;

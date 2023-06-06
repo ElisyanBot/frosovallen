@@ -98,7 +98,7 @@ import moment from 'moment';
     .event__filter {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      gap: 4rem;
       width: 50rem;
       margin: auto;
       margin-bottom: 6rem;

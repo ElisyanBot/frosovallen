@@ -55,7 +55,7 @@ const showMenu = ref(false);
   .logo-container { 
     padding-top: 1rem;
     position: relative;
-    width: 90%;
+    width: 75%;
     display: flex;
     justify-content: flex-end;
     

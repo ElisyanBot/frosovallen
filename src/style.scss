@@ -15,4 +15,14 @@ body {
   background: #f2f2f2;
 }
 
-@-ms-viewport{ width: device-width; }
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 62.5%;
+  }
+}

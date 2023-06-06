@@ -56,6 +56,7 @@ defineProps({
   @media screen and (max-width: 1300px) {
     .info-text__container {
       padding: 0 4rem;
+    
 
       h4 {
         font-size: 2.5rem;
@@ -67,15 +68,31 @@ defineProps({
     }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1050px) {
     .info-text__container {
       padding: 0 4rem;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 5rem;
 
       h4 {
         font-size: 2rem;
+        text-align: center;
+
       }
       span {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
         font-size: 1.6rem;
+        a {
+          &::before {
+            content: ' ';
+            margin: 0;
+          }
+        }
       }
     }
   }
