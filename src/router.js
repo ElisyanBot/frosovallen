@@ -14,10 +14,9 @@ export const router = createRouter({
       name: 'events',
       component: () => import('@/views/Events.vue') 
     },
-    {
-      path: '/sv',
-      name: 'sv',
-      redirect: '/',
+    { 
+      path: '/:pathMatch(.*)*', 
+      redirect: '/' 
     }
   ]
 });
