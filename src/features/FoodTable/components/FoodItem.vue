@@ -180,7 +180,7 @@ defineProps({
     }
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     .food-item {
     display: flex;
     align-items: center;
@@ -201,6 +201,7 @@ defineProps({
       padding: 1rem 0;
       width: 100%;
       gap: 0rem;
+      padding-right: 2rem;
 
       h5 {
         color: #5a7d69;
