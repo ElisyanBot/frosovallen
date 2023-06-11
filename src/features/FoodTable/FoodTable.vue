@@ -202,6 +202,15 @@ const handleClick = () => {
     }
   }
 
+  @media screen and (max-width: 600px) {
+
+    .food-table__categories {
+      justify-content: center;
+      top: -5rem;
+      gap: 3.5%;
+    }
+  }
+
   @keyframes expand-animation {
     0% {
       max-height: 50rem;

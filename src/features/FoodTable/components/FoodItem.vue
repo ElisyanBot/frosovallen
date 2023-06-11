@@ -57,7 +57,7 @@ defineProps({
     width: 100%;
 
       max-width: 55.5rem;
-      height: 17.5rem;
+      height: 20rem;
       overflow: hidden;
 
     picture {
@@ -76,8 +76,9 @@ defineProps({
     height: 15rem;
     display: flex;
     flex-direction: column;
-      width: 100%;
+    width: 100%;
     gap: 1.2rem;
+    padding: 0 2rem 0 0;
 
     h5 {
       color: #5a7d69;
@@ -86,7 +87,7 @@ defineProps({
       text-transform: uppercase;
     }
     p {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
         color: #040410;
     }
   }
@@ -126,6 +127,7 @@ defineProps({
 
 
   .footer {
+    margin-top: auto;
     p {
           font-size: 1.8rem;
           font-weight: bold;
@@ -185,7 +187,7 @@ defineProps({
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 550px) {
     .food-item {
     display: flex;
     align-items: center;
@@ -211,7 +213,7 @@ defineProps({
       h5 {
         color: #5a7d69;
         font-size: 1.6rem;
-        font-size: 3.4vw;
+        font-size: 3vw;
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 1rem;
@@ -219,7 +221,7 @@ defineProps({
         max-width: 100%;
       }
       p {
-          font-size: 3.2vw;
+          font-size: 3vw;
           color: #040410;
           max-width: 100%;
       }
@@ -227,7 +229,7 @@ defineProps({
       .footer {
         margin-top: auto;
         p {
-          font-size: 1.4rem;
+          font-size: 3vw;
           font-weight: bold;
         }
         span, div {
