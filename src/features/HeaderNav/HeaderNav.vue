@@ -5,14 +5,14 @@
   <MainWidthLayout>
     <header class="header-nav">
       <ul class="header-nav__desktop-menu-row">
-        <NavItem text="cafe" go-to="/" />
-        <NavItem text="boende" go-to="/" />
+        <NavItem text="start" go-to="/" />
+        <NavItem text="vandrarhem" go-to="/" toHash="#boende"/>
       </ul>
       <div class="header-nav__logo">
-        <img src="/img/logo.svg" alt="logo" />
+        <img src="/img/logo.svg" alt="logo" @click="() => router.push({name: 'home'})" />
       </div>
       <ul class="header-nav__desktop-menu-row">
-        <NavItem text="arrangemang" go-to="/events" />
+        <NavItem text="kalender" go-to="/events" />
         <NavLinkItem 
           target="_blank" 
           text="hitta hit" 
@@ -29,7 +29,9 @@ import MobileMenu from '../../components/MobileMenu.vue';
 import MainWidthLayout from '../../layouts/MainWidthLayout.vue'
 import NavItem from './components/NavItem.vue'
 import NavLinkItem from './components/NavLinkItem.vue'
+import { useRouter } from 'vue-router'
 
+const router = useRouter();
 </script>
 
 <style lang="scss">

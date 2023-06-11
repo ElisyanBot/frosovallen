@@ -1,6 +1,6 @@
 <template>
   <li class="header-nav-item" @click="handleClick">
-    <RouterLink :to="{ path: goTo}"> {{ text }} </RouterLink>
+    <RouterLink :to="{ path: goTo, hash:toHash}"> {{ text }} </RouterLink>
   </li>
 </template>
 
@@ -12,6 +12,11 @@ defineProps({
   },
   goTo: {
     type: String,
+  },
+  toHash: {
+    type: String,
+    required: false,
+    default: '',
   },
 })
 defineEmits(['handleClick'])

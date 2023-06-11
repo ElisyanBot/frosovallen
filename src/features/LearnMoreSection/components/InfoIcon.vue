@@ -154,7 +154,7 @@ const handleClick = () => {
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     .info-icon {
       width: 6rem;
       overflow: visible;
@@ -176,7 +176,7 @@ const handleClick = () => {
 
     .info-icon__text {
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
   }

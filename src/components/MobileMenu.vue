@@ -15,10 +15,13 @@
 
       <ul class="mobile-menu__list">
         <RouterLink :to="{name: 'home'}" class="mobile-menu__item">
-          <a href="/"> cafe </a>
+          <a href="/" @click="() => showMenu = false"> start </a>
+        </RouterLink>
+        <RouterLink :to="{name: 'home', hash: '#boende'}" class="mobile-menu__item">
+          <a href="/" @click="() => showMenu = false"> boende </a>
         </RouterLink>
         <RouterLink :to="{name: 'events'}" class="mobile-menu__item">
-          <a href="/events"> arrangemang </a>
+          <a href="/events"  @click="() => showMenu = false"> kalender </a>
         </RouterLink>
         <li class="mobile-menu__item">
           <a 

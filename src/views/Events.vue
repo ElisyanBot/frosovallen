@@ -30,7 +30,7 @@
           }"
         >
           Augusti 
-        </button>
+        </button> 
       </div>
       <section class="timeline">
         <TimelineEventCard

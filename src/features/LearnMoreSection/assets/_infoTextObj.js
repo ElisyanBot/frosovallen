@@ -10,13 +10,13 @@ export default {
     },
     {
       headerTxt: 'hitta hit',
-      infoTxt: 'Stockevägen 3, 832 93 FRÖSÖN <a href=\'https://www.google.com/maps/place/Stockev%C3%A4gen+3,+832+96+Fr%C3%B6s%C3%B6n/data=!4m2!3m1!1s0x466fb7a8e0574df3:0x20bf172f27e94663?sa=X&ved=2ahUKEwiCkpXQwuP9AhXPzYsKHXDjAXwQ8gF6BAgKEAI\'>maps</a>',
+      infoTxt: 'Stockevägen 3, 832 93 FRÖSÖN <a target="_blank" href=\'https://www.google.com/maps/place/Stockev%C3%A4gen+3,+832+96+Fr%C3%B6s%C3%B6n/data=!4m2!3m1!1s0x466fb7a8e0574df3:0x20bf172f27e94663?sa=X&ved=2ahUKEwiCkpXQwuP9AhXPzYsKHXDjAXwQ8gF6BAgKEAI\'>maps</a>',
     },
   ],
   vandrarhem: [
     {
       headerTxt: 'Boka boende',
-      infoTxt: '<b>073-091 72 49</b> <a href=\'mailto:info@frosovallen.se\'>info@frosovallen.se</a> ',
+      infoTxt: '<b>076-792 38 89</b> <a href=\'mailto:info@frosovallen.se\'>info@frosovallen.se</a> ',
     },
     {
       headerTxt: 'Bankgiro | Swish',
@@ -24,21 +24,21 @@ export default {
     },
     {
       headerTxt: 'hitta hit',
-      infoTxt: 'Stockevägen 3, 832 93 FRÖSÖN <a href=\'https://www.google.com/maps/place/Stockev%C3%A4gen+3,+832+96+Fr%C3%B6s%C3%B6n/data=!4m2!3m1!1s0x466fb7a8e0574df3:0x20bf172f27e94663?sa=X&ved=2ahUKEwiCkpXQwuP9AhXPzYsKHXDjAXwQ8gF6BAgKEAI\'>maps</a>',
+      infoTxt: 'Stockevägen 3, 832 93 FRÖSÖN <a target="_blank" href=\'https://www.google.com/maps/place/Stockev%C3%A4gen+3,+832+96+Fr%C3%B6s%C3%B6n/data=!4m2!3m1!1s0x466fb7a8e0574df3:0x20bf172f27e94663?sa=X&ved=2ahUKEwiCkpXQwuP9AhXPzYsKHXDjAXwQ8gF6BAgKEAI\'>maps</a>',
     },
   ],
   event: [
     {
-      headerTxt: 'kommande',
-      infoTxt: ' hitta kalender på facebook <a href=\'https://www.facebook.com/frosovallen\'>klicka här</a> ',
+      headerTxt: 'kalender',
+      infoTxt: 'se kommande händelser <a href=\'/events\'>Klicka här</a> ',
     },
     {
       headerTxt: 'Boka lokal',
-      infoTxt: '<b>073-091 72 49</b> <a href=\'mailto:info@frosovallen.se\'>info@frosovallen.se</a> ',
+      infoTxt: '<b>076-792 38 89</b> <a href=\'mailto:info@frosovallen.se\'>info@frosovallen.se</a> ',
     },
     {
       headerTxt: 'hitta hit',
-      infoTxt: 'Stockevägen 3, 832 93 FRÖSÖN <a href=\'https://www.google.com/maps/place/Stockev%C3%A4gen+3,+832+96+Fr%C3%B6s%C3%B6n/data=!4m2!3m1!1s0x466fb7a8e0574df3:0x20bf172f27e94663?sa=X&ved=2ahUKEwiCkpXQwuP9AhXPzYsKHXDjAXwQ8gF6BAgKEAI\'>maps</a>',
+      infoTxt: 'Stockevägen 3, 832 93 FRÖSÖN <a target="_blank" href=\'https://www.google.com/maps/place/Stockev%C3%A4gen+3,+832+96+Fr%C3%B6s%C3%B6n/data=!4m2!3m1!1s0x466fb7a8e0574df3:0x20bf172f27e94663?sa=X&ved=2ahUKEwiCkpXQwuP9AhXPzYsKHXDjAXwQ8gF6BAgKEAI\'>maps</a>',
     },
   ],
   gudstjänster: [

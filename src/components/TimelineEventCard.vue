@@ -11,10 +11,19 @@
       </div>
       <div class="footer">
         <b v-if="item.link">
-          Länk | <a :href="item?.link"> köp biljetter här </a>
+          Länk: <a :href="item?.link"> köp biljetter här </a>
+        </b>
+        <b v-if="item.price">
+          Inträde: <span> {{ item?.price }} </span>
+        </b>
+        <b v-if="item.contact">
+          Kontakt: <div> {{ item?.contact }} </div>
+        </b>
+        <b v-if="item.lead">
+          Ledare:   <div> {{ item?.lead }} </div>
         </b>
         <b>
-          KL | <span> {{ item.time }} </span>
+          Klockan: <span> {{ item.time }} </span>
         </b>
       </div>
     </article>
@@ -66,7 +75,7 @@ watch(() => props.item.date, () => {
         justify-content: space-between;
         width: 100%;
         max-width: 87.2rem;
-        min-height: 25rem;
+      min-height: 10rem;
         gap: 5rem;
 
         article {
@@ -101,17 +110,22 @@ watch(() => props.item.date, () => {
                 justify-content: flex-end;
                 gap: 1.5rem;
                 font-size: 1.8rem;
-                margin-top: auto;
-                height: 10rem;
+                min-height: 3rem;
+                margin-top: 1.6rem;
+                font-size: 1.6rem;
 
-                span {
+                span, div {
                     color:#5E6963;
-                    font-weight: lighter;
+                    font-weight: normal;
+                }
+
+                div {
+                  margin-top: 0.5rem;
                 }
                 b > a {
-                        color: #5faeca;
-                        text-decoration: none;
-                    }
+                  color: #5faeca;
+                  text-decoration: none;
+                }
             }
         }
 
@@ -170,9 +184,9 @@ watch(() => props.item.date, () => {
             }
 
             .footer {
+              margin-top: 1.6rem;
               font-size: 1.6rem;
-              height: 5em;
-              gap: 1rem;
+              gap: 0.8rem;
             }
         }
 
@@ -214,7 +228,6 @@ watch(() => props.item.date, () => {
 
             .footer {
               font-size: 1.4rem;
-              height: 5em;
               gap: 1rem;
             }
         }

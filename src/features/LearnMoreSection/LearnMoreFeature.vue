@@ -17,7 +17,7 @@
 
       <InfoIcon
         bg-src="./img/learn-more__event-img.png"
-        text="event"
+        text="kalender"
         icon-class="calendar"
         @handle-click="() => (currentInfoObj = 'event')"
       />
@@ -117,7 +117,7 @@ watchEffect(() => {
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     .info-text__line-animation {
       img {
         height: 4px;

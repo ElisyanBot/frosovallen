@@ -4,8 +4,8 @@
       <AboutUs />
       <LearnMoreFeature />
       <FooterImgBanner />
-      <!-- <FoodTable :food-items="foodItems" /> -->
-      <BookRoom :rooms="rooms" />
+      <!-- <FoodTable :food-items="foodItems" id="meny"/> -->
+      <BookRoom :rooms="rooms" id="boende" />
       <BookLocal />
     </main>
     <footer />
