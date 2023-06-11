@@ -18,7 +18,7 @@
           </div>
           <div class="content">
             <p><b>vuxna</b><span>270 kr</span> </p>
-            <p><b>barn 6-15 år</b><span>100 kr</span> </p>
+            <p><b>barn 6-12 år</b><span>100 kr</span> </p>
             <p><b>husvagn</b><span>250 kr</span> </p>
             <p><b>tältplats</b><span>195 kr </span> </p>
           </div>

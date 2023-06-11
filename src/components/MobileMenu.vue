@@ -148,4 +148,15 @@ const showMenu = ref(false);
     }
   } 
 }
+
+@media screen and (max-width: 450px) {
+  .mobile-menu {
+    .logo-container {
+      picture {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+  }
+}
 </style>

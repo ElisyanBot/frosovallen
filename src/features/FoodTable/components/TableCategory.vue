@@ -4,7 +4,7 @@
     @click="handleClick"
   >
   <i :class="`fas fa-${fontAwesomeClass}` "></i>
-    <!-- <FontAwesomeIcon :icon="['fas', fontAwesomeClass]" /> -->
+    <FontAwesomeIcon :icon="['fas', fontAwesomeClass]" />
     <h4>{{ text }}</h4>
   </div>
 </template>
@@ -42,11 +42,12 @@ const handleClick = () => {
     justify-content: center;
     gap: 1rem;
     width: 100%;
-    max-width: 24.2rem;
-    height: 21.5rem;
+    max-width: 20rem;
+    height: 20rem;
     border-radius: 0.5rem;
     color: #f2f2f2;
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+    
     &:hover {
       cursor: pointer;
       h4 {
@@ -58,13 +59,14 @@ const handleClick = () => {
       text-transform: uppercase;
       font-weight: bold;
     }
-    i {
-      font-size: 5rem;
+    svg {
+      font-size: 8rem;
     }
   }
   .food-table__category--selected {
-    i {
+    svg {
       color: #f37563;
+      color: #7d9a89;
     }
   }
 
@@ -78,18 +80,22 @@ const handleClick = () => {
         font-size: 2.2rem;
       }
       svg {
-        width: 15rem;
-        height: 8.5rem;
+        font-size: 4rem;
       }
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 800px) {
     .food-table__category {
-      width: 10rem;
-      height: 10rem;
+      width: calc(23% - 1rem);
+      height: 23vw;
+      justify-content: flex-start;
+      padding: 1vw;
       h4 {
-       font-size: 1.3rem; 
+       font-size: 3vw; 
+      }
+      svg {
+        font-size: 10vw;
       }
     }
   }

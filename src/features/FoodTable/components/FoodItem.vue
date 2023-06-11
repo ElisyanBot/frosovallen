@@ -13,6 +13,9 @@
       <p>
         {{ text }}
       </p>
+      <div class="footer">
+        <p> Pris: <span> {{ price }}</span> </p>
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +32,10 @@ defineProps({
     required: true,
   },
   text: {
+    type: String,
+    required: true,
+  },
+  price: {
     type: String,
     required: true,
   },
@@ -118,38 +125,109 @@ defineProps({
   }
 
 
-  @media screen and (max-width: 500px) {
-  .food-item {
-    height: 14rem;
+  .footer {
+      span, div {
+      }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .food-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    max-width:  calc( 100% - 1rem);
+    height: 17.5rem;
+
     picture {
-        max-width: 12rem;
+      width: 100%;
+      max-width: 15.5rem;
     }
   }
   .food-item__text-block {
-    height: 10rem;
-    h5 {
-      font-size: 1.4rem;
-    }
-    p {
-      font-size: 1.2rem;
-    }
-  }
-  .food-item--disabled {
-    picture {
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0;
+      width: 100%;
+      gap: 0rem;
 
-      img {
+      h5 {
+        color: #5a7d69;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        padding-right: 2rem;
+        max-width: 80%;
+      }
+      p {
+        font-size: 1.8rem;
+        color: #040410;
+        max-width: 80%;
+      }
+
+      .footer {
+        margin-top: auto;
+        p {
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+        span, div {
+          color: #5a7d69;
+        }
       }
     }
-    .food-item__text-block {
-    }
   }
 
-  .food-item__picture--disabled {
-    p {
-      padding: 0.5rem;
-      font-size: 1.4rem;
+  @media screen and (max-width: 550px) {
+    .food-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    max-width:  calc( 100% - 1rem);
+    height: 15.5rem;
+
+    picture {
+      width: 100%;
+      max-width: 14rem;
     }
   }
+  .food-item__text-block {
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0;
+      width: 100%;
+      gap: 0rem;
 
+      h5 {
+        color: #5a7d69;
+        font-size: 1.6rem;
+        font-size: 3.4vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        padding-right: 2rem;
+        max-width: 100%;
+      }
+      p {
+          font-size: 3.3vw;
+          color: #040410;
+          max-width: 100%;
+      }
+
+      .footer {
+        margin-top: auto;
+        p {
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+        span, div {
+          color: #5a7d69;
+        }
+      }
+    }
   }
 </style>

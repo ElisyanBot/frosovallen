@@ -10,26 +10,26 @@
         <TableCategory
           font-awesome-class="bowl-rice"
           text="varm mat"
-          :selected="selectedCategory === 1"
-          @handle-click="selectedCategory = 1"
+          :selected="selectedCategory === 'varm'"
+          @handle-click="selectedCategory = 'varm'"
         />
         <TableCategory
           font-awesome-class="bowl-food"
           text="kall mat"
-          :selected="selectedCategory === 2"
-          @handle-click="selectedCategory = 2"
+          :selected="selectedCategory === 'kall'"
+          @handle-click="selectedCategory = 'kall'"
         />
         <TableCategory
           font-awesome-class="ice-cream"
           text="fika"
-          :selected="selectedCategory === 3"
-          @handle-click="selectedCategory = 3"
+          :selected="selectedCategory === 'fika'"
+          @handle-click="selectedCategory = 'fika'"
         />
         <TableCategory
           font-awesome-class="mug-hot"
           text="dryck"
-          :selected="selectedCategory === 4"
-          @handle-click="selectedCategory = 4"
+          :selected="selectedCategory === 'dryck'"
+          @handle-click="selectedCategory = 'dryck'"
         />
       </div>
     </MainWidthLayout>
@@ -46,9 +46,10 @@
         <FoodItem
           v-for="(item, index) in foodItems"
           :key="index"
-          :img-src="item.image.src"
-          :header-txt="item.name"
+          :img-src="item.src"
+          :header-txt="item.title"
           :text="item.desc"
+          :price="item.price"
           :out-of-stock="item.status"
         />
       </div>
@@ -70,8 +71,8 @@ import {computed, ref, watchEffect} from 'vue'
 const rowsNr = ref(1)
 const expandedSection = ref(false)
 const btnTxt = ref('visa mer')
-const selectedCategory = ref(1)
-const foodItems = computed(() => props.foodItems.filter(i => i.by_category_id === selectedCategory.value ))
+const selectedCategory = ref('varm')
+const foodItems = computed(() => props.foodItems.filter(i => i.type === selectedCategory.value ))
 
 const props = defineProps({
   foodItems: Array,
@@ -109,9 +110,10 @@ const handleClick = () => {
   }
   .food-table__categories {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 8%;
     position: relative;
-    top: -8rem;
+    top: -10rem;
   }
   .food-table__items {
     display: grid;
@@ -188,6 +190,7 @@ const handleClick = () => {
 
     .food-table__categories {
       justify-content: center;
+      top: -5rem;
       gap: 5%;
     }
     .food-table__items--expanded {

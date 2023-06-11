@@ -85,7 +85,7 @@ import moment from 'moment';
         width: 100%;
         max-width: 163rem;
     }
-    .event__header {
+    .event__header { 
         font-size: 4.2rem;
         text-transform: uppercase;
         color : #c64533;
@@ -99,7 +99,7 @@ import moment from 'moment';
       display: flex;
       justify-content: center;
       gap: 4rem;
-      width: 50rem;
+      width: calc(100% - 4rem);
       margin: auto;
       margin-bottom: 6rem;
 
@@ -128,7 +128,7 @@ import moment from 'moment';
       display: flex;
       justify-content: center;
       gap: 2rem;
-      width: 50rem;
+      width: calc(100% - 4rem);
       margin: auto;
       margin-bottom: 6rem;
 
@@ -146,5 +146,9 @@ import moment from 'moment';
         color: #c64533;
       }
     }
+    }
+
+    @media screen and (max-width: 500px) {
+      
     }
 </style>

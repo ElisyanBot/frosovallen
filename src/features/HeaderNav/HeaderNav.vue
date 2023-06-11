@@ -1,5 +1,15 @@
 <template>
   <picture class="main-header__img">
+    <!-- <div class="event-highlight">
+      <h3>
+        Händer snart
+      </h3>
+
+        <EventHighlight 
+          :item="events" 
+          :reverseCard="true"
+        />
+    </div> -->
     <img src="/img/main-header__img.jpg" alt="" />
   </picture>
   <MainWidthLayout>
@@ -30,6 +40,12 @@ import MainWidthLayout from '../../layouts/MainWidthLayout.vue'
 import NavItem from './components/NavItem.vue'
 import NavLinkItem from './components/NavLinkItem.vue'
 import { useRouter } from 'vue-router'
+// import EventHighlight from '../../components/EventHighlight.vue';
+// import { Events } from '../../data/Events.js'
+// import moment from 'moment';
+// import { ref } from 'vue';
+
+// const events = ref(Events); 
 
 const router = useRouter();
 </script>
@@ -103,6 +119,24 @@ const router = useRouter();
     height: inherit;
   }
   
+  .event-highlight {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-evenly;
+    height: 40rem;
+    width: calc(100% - 80rem);
+    background-color: #f2f2f23e;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    h3 {
+      color: #c64533;
+      font-size: 4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
 
   @media screen and (max-width: 1300px) {
    .main-header__img {
@@ -118,4 +152,6 @@ const router = useRouter();
     } 
 
   }
+
+
 </style>
