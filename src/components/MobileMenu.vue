@@ -18,7 +18,7 @@
           <a href="/" @click="() => showMenu = false"> start </a>
         </RouterLink>
         <RouterLink :to="{name: 'home', hash: '#boende'}" class="mobile-menu__item">
-          <a href="/" @click="() => showMenu = false"> boende </a>
+          <a href="/" @click="() => showMenu = false"> vandrarhem </a>
         </RouterLink>
         <RouterLink :to="{name: 'events'}" class="mobile-menu__item">
           <a href="/events"  @click="() => showMenu = false"> kalender </a>

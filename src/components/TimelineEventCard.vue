@@ -217,13 +217,13 @@ watch(() => props.item.date, () => {
             margin: 0 2rem 2rem 0;
             .header {
                 h3 {
-                  font-size: 1.6rem;
+                  font-size: 1.4rem;
                 }
             }
 
             .content {
               p {
-                font-size: 1.6rem;    }
+                font-size: 1.4rem;    }
             }
 
             .footer {
@@ -235,6 +235,50 @@ watch(() => props.item.date, () => {
         .timeline {
             .date-section {
               font-size: 1.4rem;
+                p:nth-child(2)  {
+                }
+            }
+
+            .line {
+            }
+        }
+    }
+  }
+
+  
+  @media screen and (max-width: 500px) {
+      .reverseCard {
+        margin-left: 4rem;
+      }
+      .event-card {
+        flex-direction: row-reverse;
+        margin-left: 4rem;
+        gap: 2rem;
+        article {
+            padding: 1rem 2rem;
+            margin: 0 2rem 2rem 0;
+            .header {
+                h3 {
+                  font-size: 3.2vw;
+                }
+            }
+
+            .content {
+              p {
+                font-size: 3.2vw;    
+              }
+            }
+
+            .footer {
+              font-size: 3.2vw;
+              gap: 1rem;
+            }
+        }
+
+        .timeline {
+            .date-section {
+              font-size: 3.2vw;
+              width: 30vw;
                 p:nth-child(2)  {
                 }
             }

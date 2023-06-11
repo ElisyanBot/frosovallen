@@ -142,7 +142,7 @@ defineProps({
     gap: 2rem;
 
     max-width:  calc( 100% - 1rem);
-    height: 17.5rem;
+    height: 19.5rem;
 
     picture {
       width: 100%;
