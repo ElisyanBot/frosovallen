@@ -89,13 +89,13 @@ const handleClick = () => {
     .food-table__category {
       width: calc(23% - 1rem);
       height: 23vw;
-      justify-content: flex-start;
+      justify-content: center;
       padding: 1vw;
       h4 {
-       font-size: 3vw; 
+       font-size: 2.5vw; 
       }
       svg {
-        font-size: 10vw;
+        font-size: 8.5vw;
       }
     }
   }

@@ -81,7 +81,7 @@ defineProps({
 
     h5 {
       color: #5a7d69;
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: bold;
       text-transform: uppercase;
     }
@@ -126,8 +126,13 @@ defineProps({
 
 
   .footer {
-      span, div {
-      }
+    p {
+          font-size: 1.8rem;
+          font-weight: bold;
+        }
+        span, div {
+          color: #5a7d69;
+        }
   }
 
   @media screen and (max-width: 1000px) {
@@ -164,7 +169,7 @@ defineProps({
       p {
         font-size: 1.8rem;
         color: #040410;
-        max-width: 80%;
+        max-width: 95%;
       }
 
       .footer {
@@ -187,7 +192,7 @@ defineProps({
     gap: 1rem;
 
     max-width:  calc( 100% - 1rem);
-    height: 15.5rem;
+    height: 17.5rem;
 
     picture {
       width: 100%;
@@ -201,7 +206,7 @@ defineProps({
       padding: 1rem 0;
       width: 100%;
       gap: 0rem;
-      padding-right: 2rem;
+      padding-right: 1%;
 
       h5 {
         color: #5a7d69;
@@ -214,7 +219,7 @@ defineProps({
         max-width: 100%;
       }
       p {
-          font-size: 3.3vw;
+          font-size: 3.2vw;
           color: #040410;
           max-width: 100%;
       }
