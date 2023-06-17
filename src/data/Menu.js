@@ -28,9 +28,9 @@ export const Menu = [
     src: "/img/bildNamn.jpg",
   },
   {
-    title: "Våffla: skagen",
+    title: "Våffla: skagen & räkor",
     desc: "En matigare våffla toppad med skagenröra, rödlök, dill och citron. Går att få en alternativ röra som är vegansk. Går också att få glutenfri.",
-    price: "65kr",
+    price: "85kr",
     type: "varm",
     src: "/img/bildNamn.jpg",
   },

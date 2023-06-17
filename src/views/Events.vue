@@ -42,7 +42,7 @@
       </section>
     </main>
     <FooterImgBanner />
-    <footer />
+   <Footer />
 </template>
 
 <script setup>
@@ -52,6 +52,7 @@
   import TimelineEventCard from '@/components/TimelineEventCard.vue';
  import { Events } from '@/data/Events.js';
 import moment from 'moment';
+import Footer from '@/components/Footer.vue';
 
  const events = ref(Events);
  const selectedFilter = ref('alla');

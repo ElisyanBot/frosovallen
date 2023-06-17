@@ -8,7 +8,7 @@
       <BookRoom :rooms="rooms" id="boende" />
       <BookLocal />
     </main>
-    <footer />
+    <Footer />
 </template>
 
 <script setup>
@@ -17,7 +17,7 @@ import FoodTable from '@/features/FoodTable/FoodTable.vue'
 import AboutUs from '@/components/AboutUs.vue'
 import HeaderNav from '@/features/HeaderNav/HeaderNav.vue'
 import BookRoom from '@/features/BookRoom/BookRoom.vue'
-import FooterImgBanner from '@/components/FooterImgBanner.vue'
+import Footer from '@/components/Footer.vue';
 import BookLocal from '../components/BookLocal.vue'
 import { ref } from 'vue'
 
@@ -32,11 +32,3 @@ const foodItems = ref(Menu);
 
 
 </script>
-
-<style lang="scss">
-  footer {
-    background-color: #c64533;
-    width: 100%;
-    height: 30rem;
-  }
-</style>
