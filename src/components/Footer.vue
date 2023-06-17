@@ -25,6 +25,7 @@
     p, b, a {
       color: #f5f5f5;
       font-size: 1.6rem;
+      text-align: center;
     }
 
     b {
