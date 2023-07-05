@@ -68,7 +68,7 @@ export const Events = [
   title: "Konsert: Musik i sommarkväll",
   desc: "Sånger och favoritpsalmer med SvenErik Olsson och Anders Silfverdal.",
   price: "Fritt inträde",
-  time: "18:00-20:30",
+  time: "19:00-20:30",
   date: "2023-07-06",
 },
 {

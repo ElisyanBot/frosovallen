@@ -4,7 +4,7 @@
       <h2 class="event__header"> Kommande händelser </h2>
       <div class="event__filter">
         <button  :class="{'selected': checkFilter('alla') }" @click="removeFilter"> Alla </button>
-        <button 
+        <button disabled 
           :class="{'selected': checkFilter('juni') }"
           @click="() => {
             selectedFilter = 'juni';

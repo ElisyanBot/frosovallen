@@ -54,7 +54,7 @@ const isDatePassed = ref(moment(props.item.date).isBefore(moment()))
 
 watch(() => props.item.date, () => {
   date.value = moment(props.item.date).format('DD MMM YYYY').split(' ');
-  isDatePassed.value = moment(props.item.date).isBefore(moment());
+  isDatePassed.value = moment(props.item.date).isBefore(moment().add(2, 'day'));
 })
 
 
