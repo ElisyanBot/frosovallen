@@ -39,7 +39,7 @@
 
 <script setup>
 import moment from 'moment';
-import { ref, watch } from 'vue';
+import { onBeforeMount, ref, watch } from 'vue';
 
 const props = defineProps({
   item: Object,
@@ -55,8 +55,12 @@ const isDatePassed = ref(moment(props.item.date).isBefore(moment()))
 watch(() => props.item.date, () => {
   date.value = moment(props.item.date).format('DD MMM YYYY').split(' ');
   isDatePassed.value = moment(props.item.date).isBefore(moment().subtract(2, 'days'));
-})
+}, {deep: true})
 
+onBeforeMount(() => {
+  date.value = moment(props.item.date).format('DD MMM YYYY').split(' ');
+  isDatePassed.value = moment(props.item.date).isBefore(moment().subtract(2, 'days'));
+})
 
 </script>
 
